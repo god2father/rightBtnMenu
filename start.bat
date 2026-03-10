@@ -1,3 +1,5 @@
 @echo off
+setlocal
 set "SCRIPT_DIR=%~dp0"
-start "" powershell.exe -NoProfile -ExecutionPolicy Bypass -STA -File "%SCRIPT_DIR%rightBtnMenu.ps1"
+call "%SCRIPT_DIR%打开右键菜单管理.cmd"
+
