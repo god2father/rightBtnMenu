@@ -8,3 +8,4 @@ if exist "%EXE_PATH%" (
 )
 start "" powershell.exe -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -STA -File "%SCRIPT_DIR%rightBtnMenu.ps1"
 exit /b 0
+

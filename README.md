@@ -22,7 +22,11 @@
 
 ## 启动
 
-优先双击 `打开右键菜单管理.cmd`
+如果已经打包，优先双击 `dist\Right Click Menu Manager.exe`
+
+如果还没打包，可先双击 `打包EXE.cmd`
+
+不打包时，也可以双击 `打开右键菜单管理.cmd`
 
 如果你希望以后不用进项目目录，双击 `安装快捷方式.cmd`，它会自动在桌面和开始菜单创建 `Right Click Menu Manager` 快捷方式。
 
@@ -36,6 +40,22 @@
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -STA -File .\rightBtnMenu.ps1
+```
+
+## 打包 EXE
+
+双击 `打包EXE.cmd`
+
+或者命令行执行：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\build-exe.ps1
+```
+
+打包产物默认输出到：
+
+```text
+.\dist\Right Click Menu Manager.exe
 ```
 
 ## 使用方式
